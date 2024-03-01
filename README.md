@@ -44,12 +44,12 @@ AS $$
 WITH shortlist AS (
   SELECT *
   FROM openai3072
-  ORDER BY (text_embedding_3_large_3072_embedding[0:256])::vector(256) <=> (query_embedding[0:256])::vector(256)
+  ORDER BY (text_embedding_3_large_3072_embedding[0:256])::vector(256) <-> (query_embedding[0:256])::vector(256)
   LIMIT match_count * 8
 )
 SELECT *
 FROM shortlist
-ORDER BY text_embedding_3_large_3072_embedding <=> query_embedding
+ORDER BY text_embedding_3_large_3072_embedding <-> query_embedding
 LIMIT match_count;
 $$;
 ```

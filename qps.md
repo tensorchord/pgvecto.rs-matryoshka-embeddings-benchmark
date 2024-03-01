@@ -257,3 +257,65 @@ tps = 2834.881899 (without initial connection time)
 latency average = 5.643 ms
 initial connection time = 84.215 ms
 tps = 2835.343437 (without initial connection time)
+
+### 32
+
+latency average = 11.531 ms
+initial connection time = 158.387 ms
+tps = 2775.026625 (without initial connection time)
+
+## limit 10
+
+### 16
+
+latency average = 3.945 ms
+initial connection time = 84.465 ms
+tps = 4056.114190 (without initial connection time)
+
+### 32
+
+latency average = 8.073 ms
+initial connection time = 162.980 ms
+tps = 3963.857600 (without initial connection time)
+
+## limit 5
+
+### 16
+
+latency average = 3.713 ms
+initial connection time = 83.334 ms
+tps = 4308.871343 (without initial connection time)
+
+### 32
+
+latency average = 7.612 ms
+initial connection time = 158.287 ms
+tps = 4204.106323 (without initial connection time)
+
+
+# E2E with large worker memory
+
+256,5,9.73,1632.75
+256,10,10.86,1549.27
+256,50,16.73,956.26
+256,100,25.20,634.72
+256-e2e,5,12.90,1240.82
+256-e2e,10,15.05,1063.24
+256-e2e,50,32.86,486.89
+256-e2e,100,62.02,257.98
+1024,5,11.27,1419.14
+1024,10,11.95,1339.11
+1024,50,17.82,897.83
+1024,100,27.23,587.66
+1024-e2e,5,12.96,1234.23
+1024-e2e,10,15.10,1059.43
+1024-e2e,50,34.19,468.01
+1024-e2e,100,64.78,246.98
+3072b,5,3.69,4331.35
+3072b,10,3.93,4068.45
+3072b,50,5.64,2838.47
+3072b,100,8.44,1894.10
+3072b-e2e,5,6.20,2578.72
+3072b-e2e,10,8.42,1898.28
+3072b-e2e,50,24.57,651.01
+3072b-e2e,100,50.55,316.50
